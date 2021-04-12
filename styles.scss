@@ -1,0 +1,108 @@
+$brand-color: rgba(1, 87, 155, 1);
+$black: rgba(0, 0, 0, 1);
+
+* {
+  font-family: Roboto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.card {
+  margin: 100px;
+  border: solid rgba(1, 87, 155, 0.1);
+  box-shadow: 0px 3px 6px rgba(1, 87, 155, 0.15);
+  border-radius: 12px;
+}
+
+.card-title a {
+  color: $black;
+  text-decoration: none;
+}
+
+.card-img-top {
+  width: 250px;
+  height: auto;
+  align-self: center;
+}
+
+.card-links {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+}
+
+.card-links img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.price,
+.share,
+.brand-img {
+  width: 33%;
+  border: solid rgba(1, 87, 155, 0.1) 0.1px;
+}
+
+.price {
+  padding: 2px;
+  text-align: center;
+}
+
+.price h5 {
+  color: $brand-color;
+}
+
+.share {
+  color: $brand-color;
+  border-radius: 0px 0px 12px 0px;
+}
+
+.share i {
+  padding: 20px 40px;
+}
+
+.brand-img {
+  border-radius: 0px 0px 0px 12px;
+  padding: 10px 30px;
+}
+
+.percent {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  color: white;
+  border-radius: 0px 5px 0px 5px;
+
+  background-color: $brand-color;
+  padding: 0px 10px;
+}
+
+//expird card
+
+.expired {
+  width: 33%;
+  color: white;
+  text-align: center;
+  border-radius: 0px 0px 12px 0px;
+  background-color: #e12727;
+}
+
+.expired h6 {
+  margin-top: 20px;
+}
+
+@media (maxwidth: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
